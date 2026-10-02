@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        À propos du projet - Madagascar au-delà des frontières
+    </title>
+
+    <!-- =====================================
+         POLICES
+    ====================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+           <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+          <style>
+            :root {
+
+            --green: #064d3c;
+            --green-dark: #03382c;
+
+            --cream: #f8f5ed;
+            --cream-dark: #eee9dc;
+
+            --brown: #b87542;
+
+            --text: #20231f;
+            --text-light: #69716b;
+
+            --white: #ffffff;
+
+            --border: #dedbd2;
+        }
+
+       /* =========================
+        HEADER
+        ========================= */
+
+        
+
+         a {
+
+            text-decoration: none;
+
+            color: inherit;
+        }
+
+
+        button,
+        input {
+
+            font-family: inherit;
+        }
+
+
+        .container {
+
+            width: min(1150px, 90%);
+
+            margin: auto;
+
+            
+        }
+
+
+        /* =========================
+        HEADER
+        ========================= */
+
+        .header {
+            position: relative;
+            z-index: 1000;
+
+            background: white;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar {
+            min-height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: var(--green);
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: var(--green);
+        }
+
+        .logo-icon {
+            font-size: 30px;
+            transform: rotate(-20deg);
+        }
+
+        .logo strong {
+            display: block;
+
+            font-family: Georgia, serif;
+            font-size: 25px;
+            line-height: 1;
+        }
+
+        .logo small {
+            display: block;
+
+            margin-top: 3px;
+
+            font-size: 7px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 34px;
+        }
+
+        .nav-menu a {
+            position: relative;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            padding: 28px 0;
+        }
+
+        .nav-menu a::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 18px;
+
+            width: 0;
+            height: 2px;
+
+            background: var(--green);
+
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-btn,
+        .mobile-btn {
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+
+            font-size: 17px;
+            color: var(--green);
+        }
+
+        .cart-btn {
+            position: relative;
+        }
+
+        .cart-btn span {
+            position: absolute;
+
+            top: -7px;
+            right: -8px;
+
+            width: 15px;
+            height: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--green);
+            color: white;
+
+            font-size: 9px;
+        }
+
+        .mobile-btn {
+            display: none;
+        }
+          </style>
+
+          <link rel="icon" type="image/x-icon" href="Images/ravenala-palm.png">
+</head>
+
+
+<body style="
+    margin: 0;
+    padding: 0;
+    background: #f8f5ed;
+    color: #20231f;
+    font-family: 'DM Sans', Arial, sans-serif;
+    line-height: 1.7;
+">
+
+
+    <!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">▲</span>
+
+            <div>
+                <strong>Madagascar</strong>
+                <small>AU-DELÀ DES FRONTIÈRES</small>
+            </div>
+
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="index.html">Accueil</a>
+            <a href="produits.html" >Produits</a>
+            <a href="apropos.html" class="active">À propos</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="searchBtn" class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+            <button class="icon-btn cart-btn">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section style="
+         background:
+        linear-gradient(
+            90deg,
+            rgba(6, 49, 35, .88),
+            rgba(6, 49, 35, .45)
+        ),
+        url('../assets/hero-madagascar.jpg');
+        
+
+        background-size: cover;
+        background-position: center;
+
+        min-height: 500px;
+
+        display: flex;
+        align-items: center;
+    ">
+
+        <div style="
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        ">
+
+            <div style="
+                max-width: 720px;
+                color: white;
+            ">
+
+                <span style="
+                    color: #d7aa83;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                ">
+                    À PROPOS DU PROJET
+                </span>
+
+
+                <h1 style="
+                    font-family: 'Playfair Display', Georgia, serif;
+                    font-size: clamp(45px, 7vw, 72px);
+                    line-height: 1.05;
+                    margin: 20px 0;
+                    color: white;
+                ">
+
+                    Madagascar,
+                    <br>
+                    même loin de chez vous.
+
+                </h1>
+
+
+                <p style="
+                    max-width: 620px;
+                    font-size: 18px;
+                    color: #e8eeeb;
+                    margin-bottom: 30px;
+                ">
+
+                    Madagascar au-delà des frontières est un
+                    projet qui cherche à créer un lien entre
+                    les produits Malagasy, leur histoire et
+                    les personnes qui vivent loin de Madagascar.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PRÉSENTATION DU PROJET
+    ====================================== -->
+
+    <section id="projet"
+             style="
+                 padding: 100px 0;
+                 background: #f8f5ed;
+             ">
+
+        <div style="
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        ">
+
+
+            <!-- TITRE -->
+
+            <div style="
+                max-width: 700px;
+                margin-bottom: 60px;
+            ">
+
+                <span style="
+                    color: #b87542;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                ">
+                    LE PROJET
+                </span>
+
+
+                <h2 style="
+                    font-family: 'Playfair Display', Georgia, serif;
+                    color: #03382c;
+                    font-size: 45px;
+                    line-height: 1.15;
+                    margin: 15px 0;
+                ">
+
+                    Une idée née d'une envie
+                    de rester connecté à Madagascar.
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- CONTENU -->
+
+            <div style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+            ">
+
+
+                <!-- TEXTE -->
+
+                <div>
+
+                    <p style="
+                        font-size: 17px;
+                        color: #4f5852;
+                    ">
+
+                        Lorsqu'une personne quitte Madagascar
+                        pour vivre dans un autre pays, la distance
+                        ne signifie pas nécessairement qu'elle
+                        souhaite perdre le contact avec sa culture.
+
+                    </p>
+
+
+                    <p style="
+                        font-size: 17px;
+                        color: #4f5852;
+                    ">
+
+                        Les produits, les saveurs, les objets
+                        artisanaux et les histoires peuvent
+                        permettre de conserver une partie de
+                        cette connexion.
+
+                    </p>
+
+
+                    <p style="
+                        font-size: 17px;
+                        color: #4f5852;
+                    ">
+
+                        C'est à partir de cette idée que le projet
+                        <strong style="color: #064d3c;">
+                            Madagascar au-delà des frontières
+                        </strong>
+                        a été imaginé.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- IMAGE -->
+
+                <div style="
+                    min-height: 380px;
+                    overflow: hidden;
+                    border-radius: 8px;
+                ">
+
+                    <img
+                        src="images/madagascar.jpg"
+                        alt="Madagascar"
+                        style="
+                            width: 100%;
+                            height: 380px;
+                            object-fit: cover;
+                            display: block;
+                        "
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         NOTRE OBJECTIF
+    ====================================== -->
+
+    <section id="mission"
+             style="
+                 background: white;
+                 padding: 100px 0;
+             ">
+
+        <div style="
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        ">
+
+
+            <div style="
+                text-align: center;
+                max-width: 700px;
+                margin: 0 auto 60px;
+            ">
+
+                <span style="
+                    color: #b87542;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                ">
+                    NOTRE MISSION
+                </span>
+
+
+                <h2 style="
+                    font-family: 'Playfair Display', Georgia, serif;
+                    color: #03382c;
+                    font-size: 44px;
+                    line-height: 1.15;
+                    margin: 15px 0;
+                ">
+
+                    Faire découvrir Madagascar
+                    autrement.
+
+                </h2>
+
+
+                <p style="
+                    color: #69716b;
+                    font-size: 17px;
+                ">
+
+                    Le projet ne consiste pas uniquement à
+                    présenter des produits. Il cherche également
+                    à raconter ce qui se trouve derrière eux.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- CARTES -->
+
+            <div style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            ">
+
+
+                <!-- CARTE 1 -->
+
+                <div style="
+                    border: 1px solid #dedbd2;
+                    background: #f8f5ed;
+                    border-radius: 7px;
+                    padding: 35px;
+                ">
+
+                    <div style="
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #064d3c;
+                        color: white;
+                        border-radius: 50%;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    ">
+                        01
+                    </div>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 25px;
+                        margin-bottom: 12px;
+                    ">
+
+                        Les produits
+
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        margin: 0;
+                    ">
+
+                        Présenter des produits Malagasy et
+                        permettre aux visiteurs de mieux
+                        connaître leur origine et leur histoire.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CARTE 2 -->
+
+                <div style="
+                    border: 1px solid #dedbd2;
+                    background: #f8f5ed;
+                    border-radius: 7px;
+                    padding: 35px;
+                ">
+
+                    <div style="
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #b87542;
+                        color: white;
+                        border-radius: 50%;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    ">
+                        02
+                    </div>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 25px;
+                        margin-bottom: 12px;
+                    ">
+
+                        Les producteurs
+
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        margin: 0;
+                    ">
+
+                        Mettre en avant les personnes et le
+                        savoir-faire qui se trouvent derrière
+                        les produits.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CARTE 3 -->
+
+                <div style="
+                    border: 1px solid #dedbd2;
+                    background: #f8f5ed;
+                    border-radius: 7px;
+                    padding: 35px;
+                ">
+
+                    <div style="
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #064d3c;
+                        color: white;
+                        border-radius: 50%;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                    ">
+                        03
+                    </div>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 25px;
+                        margin-bottom: 12px;
+                    ">
+
+                        La culture
+
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        margin: 0;
+                    ">
+
+                        Faire découvrir certains aspects de la
+                        culture Malagasy à travers les produits,
+                        les histoires et les traditions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         COMMENT ÇA FONCTIONNE ?
+    ====================================== -->
+
+    <section style="
+        padding: 100px 0;
+        background: #eee9dc;
+    ">
+
+        <div style="
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        ">
+
+
+            <div style="
+                max-width: 650px;
+                margin-bottom: 55px;
+            ">
+
+                <span style="
+                    color: #b87542;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                ">
+                    NOTRE APPROCHE
+                </span>
+
+
+                <h2 style="
+                    font-family: 'Playfair Display', Georgia, serif;
+                    color: #03382c;
+                    font-size: 43px;
+                    line-height: 1.15;
+                    margin: 15px 0;
+                ">
+
+                    Du contenu à la découverte.
+
+                </h2>
+
+
+                <p style="
+                    color: #69716b;
+                    font-size: 17px;
+                ">
+
+                    Le projet commence par le contenu et la
+                    découverte avant d'évoluer progressivement
+                    vers la présentation des produits.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ÉTAPES -->
+
+            <div style="
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            ">
+
+
+                <div style="
+                    background: white;
+                    padding: 30px 25px;
+                    border-radius: 7px;
+                    border: 1px solid #dedbd2;
+                ">
+
+                    <strong style="
+                        color: #b87542;
+                        font-size: 13px;
+                    ">
+                        ÉTAPE 01
+                    </strong>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 23px;
+                    ">
+                        Découvrir
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        font-size: 14px;
+                    ">
+
+                        Le visiteur découvre une histoire,
+                        un produit ou un producteur.
+
+                    </p>
+
+                </div>
+
+
+
+                <div style="
+                    background: white;
+                    padding: 30px 25px;
+                    border-radius: 7px;
+                    border: 1px solid #dedbd2;
+                ">
+
+                    <strong style="
+                        color: #b87542;
+                        font-size: 13px;
+                    ">
+                        ÉTAPE 02
+                    </strong>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 23px;
+                    ">
+                        Comprendre
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        font-size: 14px;
+                    ">
+
+                        Les articles présentent l'origine,
+                        le travail et le contexte du produit.
+
+                    </p>
+
+                </div>
+
+
+
+                <div style="
+                    background: white;
+                    padding: 30px 25px;
+                    border-radius: 7px;
+                    border: 1px solid #dedbd2;
+                ">
+
+                    <strong style="
+                        color: #b87542;
+                        font-size: 13px;
+                    ">
+                        ÉTAPE 03
+                    </strong>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 23px;
+                    ">
+                        Explorer
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        font-size: 14px;
+                    ">
+
+                        Le visiteur peut ensuite découvrir
+                        d'autres produits et contenus.
+
+                    </p>
+
+                </div>
+
+
+
+                <div style="
+                    background: white;
+                    padding: 30px 25px;
+                    border-radius: 7px;
+                    border: 1px solid #dedbd2;
+                ">
+
+                    <strong style="
+                        color: #b87542;
+                        font-size: 13px;
+                    ">
+                        ÉTAPE 04
+                    </strong>
+
+
+                    <h3 style="
+                        font-family: 'Playfair Display', Georgia, serif;
+                        color: #03382c;
+                        font-size: 23px;
+                    ">
+                        Garder le lien
+                    </h3>
+
+
+                    <p style="
+                        color: #69716b;
+                        font-size: 14px;
+                    ">
+
+                        La newsletter permet de continuer
+                        à suivre les nouvelles histoires.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         VISION
+    ====================================== -->
+
+    <section style="
+        padding: 100px 0;
+        background: #064d3c;
+        color: white;
+    ">
+
+        <div style="
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        ">
+
+            <span style="
+                color: #d7aa83;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 2px;
+            ">
+                NOTRE VISION
+            </span>
+
+
+            <h2 style="
+                font-family: 'Playfair Display', Georgia, serif;
+                font-size: 48px;
+                line-height: 1.15;
+                margin: 18px 0 25px;
+            ">
+
+                Même loin de Madagascar,
+                gardez Madagascar près de vous.
+
+            </h2>
+
+
+            <p style="
+                max-width: 700px;
+                margin: auto;
+                color: #dce8e2;
+                font-size: 17px;
+            ">
+
+                À travers ce projet, nous souhaitons créer
+                progressivement un espace où les produits,
+                les histoires et la culture Malagasy peuvent
+                être découverts et partagés avec les personnes
+                vivant à Madagascar comme avec celles qui
+                vivent à l'étranger.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         NEWSLETTER / CTA
+    ====================================== -->
+
+    <section id="contact"
+             style="
+                 padding: 80px 0;
+                 background: #f8f5ed;
+             ">
+
+        <div style="
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        ">
+
+            <span style="
+                color: #b87542;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 2px;
+            ">
+                RESTEZ CONNECTÉ
+            </span>
+
+
+            <h2 style="
+                font-family: 'Playfair Display', Georgia, serif;
+                color: #03382c;
+                font-size: 42px;
+                line-height: 1.2;
+                margin: 15px 0;
+            ">
+
+                Découvrez les prochaines
+                histoires Malagasy.
+
+            </h2>
+
+
+            <p style="
+                color: #69716b;
+                max-width: 600px;
+                margin: 0 auto 30px;
+            ">
+
+                Recevez les nouveaux articles et découvrez
+                régulièrement des produits, des producteurs
+                et des histoires autour de Madagascar.
+
+            </p>
+
+
+            <form id="newsletterForm"
+                  style="
+                      max-width: 550px;
+                      margin: auto;
+                      display: flex;
+                      gap: 10px;
+                  ">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Votre adresse email"
+                    required
+                    style="
+                        flex: 1;
+                        padding: 15px;
+                        border: 1px solid #d5d0c4;
+                        border-radius: 4px;
+                        outline: none;
+                        font-family: inherit;
+                    "
+                >
+
+
+                <button type="submit"
+                        style="
+                            border: none;
+                            background: #064d3c;
+                            color: white;
+                            padding: 15px 22px;
+                            border-radius: 4px;
+                            font-weight: 700;
+                            cursor: pointer;
+                        ">
+
+                    S'inscrire →
+
+                </button>
+
+            </form>
+
+
+            <p id="message"
+               style="
+                   margin-top: 15px;
+                   color: #064d3c;
+                   font-size: 14px;
+               ">
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo footer-logo">
+
+                <span class="logo-icon">▲</span>
+
+                <div>
+                    <strong>Madagascar</strong>
+                    <small>AU-DELÀ DES FRONTIÈRES</small>
+                </div>
+
+            </a>
+
+            <p>
+                Faire découvrir Madagascar,
+                ses produits et ses histoires
+                au-delà des frontières.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Navigation</h4>
+
+            <a href="index.html">Accueil</a>
+            <a href="blog.html">Blog</a>
+            <a href="produits.html">Produits</a>
+            <a href="apropos.html" >À propos</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Suivez-nous</h4>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Madagascar au-delà des frontières.
+            Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script>
+
+        /* =====================================
+           MENU MOBILE
+        ====================================== */
+
+        const menuButton =
+            document.getElementById("menuButton");
+
+        const mainNav =
+            document.getElementById("mainNav");
+
+
+        menuButton.addEventListener("click", function () {
+
+            if (mainNav.style.display === "flex") {
+
+                mainNav.style.display = "none";
+
+            } else {
+
+                mainNav.style.display = "flex";
+
+                mainNav.style.flexDirection = "column";
+
+                mainNav.style.position = "absolute";
+
+                mainNav.style.top = "90px";
+
+                mainNav.style.left = "0";
+
+                mainNav.style.width = "100%";
+
+                mainNav.style.background = "#f8f5ed";
+
+                mainNav.style.padding = "25px";
+
+                mainNav.style.boxSizing = "border-box";
+
+            }
+
+        });
+
+
+
+        /* =====================================
+           NEWSLETTER
+        ====================================== */
+
+        const newsletterForm =
+            document.getElementById(
+                "newsletterForm"
+            );
+
+
+        const message =
+            document.getElementById("message");
+
+
+        newsletterForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const email =
+                    document
+                    .getElementById("email")
+                    .value
+                    .trim();
+
+
+                if (email === "") {
+
+                    message.textContent =
+                        "Veuillez entrer votre adresse email.";
+
+                    return;
+
+                }
+
+
+                message.textContent =
+                    "Merci ! Votre inscription a bien été prise en compte.";
+
+
+                newsletterForm.reset();
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

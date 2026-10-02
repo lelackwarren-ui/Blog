@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Madagascar au-delà des frontières</title>
+
+    <meta name="description"
+          content="Découvrez les produits Malagasy, leurs histoires, leurs producteurs et la culture de Madagascar.">
+
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="Images/ravenala-palm.png">
+        
+
+<link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icônes -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">▲</span>
+
+            <div>
+                <strong>Madagascar</strong>
+                <small>AU-DELÀ DES FRONTIÈRES</small>
+            </div>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html" class="active">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+            <button class="icon-btn cart-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>0</span>
+            </button>
+
+            <button class="mobile-btn" id="mobileBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-box" id="searchBox">
+
+    <div class="container search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un article, un produit..."
+        >
+
+        <button id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="accueil">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-title">LE BLOG</span>
+
+            <h1>
+                Madagascar,<br>
+                ses produits<br>
+                et ses histoires
+            </h1>
+
+            <p>
+                Découvrez les richesses de Madagascar à travers
+                ses produits, ses producteurs et sa culture.
+            </p>
+
+            <a href="blog.html" class="btn btn-primary">
+                Explorer le blog
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-message">
+            <p>
+                Même loin,<br>
+                Madagascar<br>
+                reste proche.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BLOG ================= -->
+
+<section class="blog-section" id="blog">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-line"></span>
+
+                <h2>Articles récents</h2>
+            </div>
+
+            <a href="blog.html" class="view-all">
+                Voir tous les articles
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="content-grid">
+
+            <!-- ARTICLES -->
+
+            <div class="articles">
+
+                <!-- ARTICLE 1 -->
+
+                <article class="article-card">
+
+                    <img src="Images\Vanille.jpg"
+                         alt="Vanille de Madagascar">
+
+                    <div class="article-content">
+
+                        <div class="article-meta">
+                            <span class="category">Produits</span>
+                            <span>12 avril 2026</span>
+                        </div>
+
+                        <h3>
+                            La vanille de Madagascar :
+                            un produit à découvrir
+                        </h3>
+
+                        <p>
+                            Découvrez l'histoire de la vanille Malagasy,
+                            son origine et les raisons pour lesquelles
+                            elle est connue dans le monde.
+                        </p>
+
+                        <a href="blog.html" class="read-more">
+                            Lire la suite
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARTICLE 2 -->
+
+                <article class="article-card">
+
+                    <img src="Images\Producteur.jpg"
+                         alt="Producteur Malagasy">
+
+                    <div class="article-content">
+
+                        <div class="article-meta">
+                            <span class="category">Producteurs</span>
+                            <span>5 avril 2026</span>
+                        </div>
+
+                        <h3>
+                            À la rencontre de nos producteurs Malagasy
+                        </h3>
+
+                        <p>
+                            Découvrez les personnes qui se trouvent
+                            derrière les produits et leur travail
+                            quotidien à Madagascar.
+                        </p>
+
+                        <a href="blog.html" class="read-more">
+                            Lire la suite
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARTICLE 3 -->
+
+                <article class="article-card">
+
+                    <img src="Images\Coffret.jpg"
+                         alt="Coffret de produits Malagasy">
+
+                    <div class="article-content">
+
+                        <div class="article-meta">
+                            <span class="category">Culture</span>
+                            <span>28 mars 2026</span>
+                        </div>
+
+                        <h3>
+                            Nos coffrets Malagasy :
+                            une expérience culturelle
+                        </h3>
+
+                        <p>
+                            Plus qu'un simple cadeau, nos coffrets
+                            permettent de découvrir Madagascar à
+                            travers ses produits et ses traditions.
+                        </p>
+
+                        <a href="blog.html" class="read-more">
+                            Lire la suite
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <!-- NEWSLETTER -->
+
+                <div class="newsletter">
+
+                    <h3>
+                        Restez connecté
+                        à notre aventure
+                    </h3>
+
+                    <p>
+                        Recevez nos nouveaux articles,
+                        nos actualités et les nouveautés
+                        du projet directement par e-mail.
+                    </p>
+
+                    <form id="newsletterForm">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Votre adresse e-mail"
+                            required
+                        >
+
+                        <button type="submit">
+                            S'inscrire
+                        </button>
+
+                    </form>
+
+                    <small id="newsletterMessage"></small>
+
+                </div>
+
+
+                <!-- CATEGORIES -->
+
+                <div class="categories">
+
+                    <h3>Catégories</h3>
+
+                    <button class="category-btn" data-category="Culture">
+                        <span>
+                            <i class="fa-solid fa-house"></i>
+                            Culture
+                        </span>
+                        <span>8</span>
+                    </button>
+
+                    <button class="category-btn" data-category="Produits">
+                        <span>
+                            <i class="fa-solid fa-box"></i>
+                            Produits
+                        </span>
+                        <span>6</span>
+                    </button>
+
+                    <button class="category-btn" data-category="Producteurs">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            Producteurs
+                        </span>
+                        <span>4</span>
+                    </button>
+
+                    <button class="category-btn" data-category="Entrepreneuriat">
+                        <span>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            Entrepreneuriat
+                        </span>
+                        <span>3</span>
+                    </button>
+
+                    <button class="category-btn" data-category="Diaspora">
+                        <span>
+                            <i class="fa-solid fa-earth-africa"></i>
+                            Diaspora
+                        </span>
+                        <span>2</span>
+                    </button>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div class="social">
+
+                    <h3>Suivez-nous</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT ================= -->
+
+<section class="project-section" id="apropos">
+
+    <div class="container project-grid">
+
+        <div class="project-image">
+
+            <img src="Images/Connexion.png"
+                 alt="Projet de connexion entre Madagascar et la diaspora">
+
+        </div>
+
+        <div class="project-text">
+
+            <span class="small-title dark">
+                NOTRE PROJET
+            </span>
+
+            <h2>
+                Une connexion entre
+                Madagascar et sa diaspora
+            </h2>
+
+            <p>
+                À travers ce projet, nous souhaitons créer une
+                connexion entre les producteurs Malagasy et les
+                personnes vivant à l'étranger.
+            </p>
+
+            <p>
+                Le site permet de découvrir les produits,
+                les histoires des producteurs et la culture
+                Malagasy tout en préparant progressivement
+                une plateforme de vente.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+                En savoir plus
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- DERNIERS ARTICLES -->
+
+        <div class="latest">
+
+            <h3>Derniers articles</h3>
+
+            <a href="#" class="latest-item">
+
+                <img src="Images/Vanille.jpg" alt="Vanille">
+
+                <div>
+                    <strong>
+                        Les produits Malagasy
+                        à découvrir
+                    </strong>
+
+                    <small>16 mars 2026</small>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="latest-item">
+
+                <img src="Images/Coffret.jpg" alt="Coffret">
+
+                <div>
+                    <strong>
+                        Comment choisir
+                        un coffret Malagasy ?
+                    </strong>
+
+                    <small>10 mars 2026</small>
+                </div>
+
+            </a>
+
+
+            <a href="#" class="latest-item">
+
+                <img src="Images/Producteur.jpg"
+                     alt="Producteur">
+
+                <div>
+                    <strong>
+                        À la rencontre
+                        des producteurs
+                    </strong>
+
+                    <small>5 mars 2026</small>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="produits">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-line"></span>
+
+                <h2>À découvrir</h2>
+            </div>
+
+            <a href="produits.html" class="view-all">
+                Voir les produits
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="products-grid">
+
+            <div class="product-card">
+
+                <img src="Images/Vanille.jpg"
+                     alt="Vanille">
+
+                <div>
+                    <span>Épicerie</span>
+                    <h3>Vanille de Madagascar</h3>
+
+                    <a href="produits.html">
+                        Découvrir
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="Images/Coffret.jpg"
+                     alt="Coffret Malagasy">
+
+                <div>
+                    <span>Coffrets</span>
+                    <h3>Coffret découverte</h3>
+
+                    <a href="produits.html">
+                        Découvrir
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="Images/Producteur.jpg"
+                     alt="Café Malagasy">
+
+                <div>
+                    <span>Producteurs</span>
+                    <h3>Café Malagasy</h3>
+
+                    <a href="produits.html">
+                        Découvrir
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container contact-content">
+
+        <span class="small-title dark">
+            RESTONS EN CONTACT
+        </span>
+
+        <h2>
+            Une question ou une idée ?
+        </h2>
+
+        <p>
+            Le projet est encore en développement.
+            Vos avis peuvent nous aider à mieux comprendre
+            les besoins des Malagasy vivant à l'étranger.
+        </p>
+
+        <a href="mailto:contact@exemple.com"
+           class="btn btn-primary">
+            Nous contacter
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo footer-logo">
+
+                <span class="logo-icon">▲</span>
+
+                <div>
+                    <strong>Madagascar</strong>
+                    <small>AU-DELÀ DES FRONTIÈRES</small>
+                </div>
+
+            </a>
+
+            <p>
+                Faire découvrir Madagascar,
+                ses produits et ses histoires
+                au-delà des frontières.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Navigation</h4>
+
+            <a href="#accueil">Accueil</a>
+            <a href="blog.html">Blog</a>
+            <a href="produits.html">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Suivez-nous</h4>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Madagascar au-delà des frontières.
+            Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

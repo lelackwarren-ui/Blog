@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Madagascar au-delà des frontières</title>
+
+     <link rel="icon" type="image/x-icon" href="Images/ravenala-palm.png">
+     
+    <link rel="stylesheet" href="Css/contact.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">▲</span>
+
+            <div>
+                <strong>Madagascar</strong>
+                <small>AU-DELÀ DES FRONTIÈRES</small>
+            </div>
+
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="searchBtn" class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+            <button class="icon-btn cart-btn">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <p>CONTACT</p>
+
+    <h1>
+        Parlons de Madagascar.
+    </h1>
+
+    <p>
+        Une question, une idée ou une proposition ?
+        N'hésitez pas à nous contacter.
+    </p>
+
+</section>
+
+
+<section class="section contact-section">
+
+
+    <div class="contact-info">
+
+        <p class="section-label">
+            NOUS CONTACTER
+        </p>
+
+        <h2>
+            Une idée ou une question ?
+        </h2>
+
+        <p>
+            Vous pouvez nous écrire pour parler du projet,
+            proposer une collaboration ou simplement
+            partager votre expérience.
+        </p>
+
+
+        <div class="contact-item">
+
+            <strong>Email</strong>
+
+            <p>
+                contact@madagascar-frontieres.com
+            </p>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>Réseaux sociaux</strong>
+
+            <p>
+                Instagram · Facebook · TikTok
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-form-container">
+
+        <form id="contactForm">
+
+            <label for="nom">
+                Nom
+            </label>
+
+            <input
+                type="text"
+                id="nom"
+                placeholder="Votre nom"
+                required
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="votre@email.com"
+                required
+            >
+
+
+            <label for="sujet">
+                Sujet
+            </label>
+
+            <select id="sujet">
+
+                <option value="">
+                    Choisir un sujet
+                </option>
+
+                <option>
+                    Question
+                </option>
+
+                <option>
+                    Collaboration
+                </option>
+
+                <option>
+                    Produit
+                </option>
+
+                <option>
+                    Autre
+                </option>
+
+            </select>
+
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                rows="6"
+                maxlength="500"
+                placeholder="Votre message..."
+                required
+            ></textarea>
+
+            <div class="counter">
+                <span id="messageCount">0</span>/500
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Envoyer le message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="section faq">
+
+    <div class="section-title">
+
+        <p>FAQ</p>
+
+        <h2>
+            Questions fréquentes
+        </h2>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Quel est l'objectif du projet ?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Le projet cherche à maintenir un lien entre
+                Madagascar et sa diaspora à travers les produits,
+                les histoires et la culture.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Peut-on proposer un produit ?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Oui. Vous pouvez nous contacter pour présenter
+                un produit ou une idée de collaboration.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Le site permet-il déjà de commander ?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Pour le moment, le site sert principalement
+                à présenter le projet, les produits et les contenus.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo footer-logo">
+
+                <span class="logo-icon">▲</span>
+
+                <div>
+                    <strong>Madagascar</strong>
+                    <small>AU-DELÀ DES FRONTIÈRES</small>
+                </div>
+
+            </a>
+
+            <p>
+                Faire découvrir Madagascar,
+                ses produits et ses histoires
+                au-delà des frontières.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Navigation</h4>
+
+            <a href="#accueil">Accueil</a>
+            <a href="blog.html">Blog</a>
+            <a href="produits.html">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Suivez-nous</h4>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Madagascar au-delà des frontières.
+            Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

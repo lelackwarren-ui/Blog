@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produits Malagasy | Madagascar au-delà des frontières</title>
+
+    <meta
+        name="description"
+        content="Découvrez une sélection de produits Malagasy : épices, boissons, artisanat, pâtisseries et biscuits."
+    >
+    <link rel="icon" type="image/x-icon" href="Images/ravenala-palm.png">
+
+    <link rel="stylesheet" href="Css/produits.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">▲</span>
+
+            <div>
+                <strong>Madagascar</strong>
+                <small>AU-DELÀ DES FRONTIÈRES</small>
+            </div>
+
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="index.html">Accueil</a>
+            <a href="produits.html" class="active">Produits</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="searchBtn" class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+            <button class="icon-btn cart-btn">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-box" id="searchBox">
+
+    <div class="container search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un produit..."
+        >
+
+        <button id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="products-hero">
+
+    <div class="container">
+
+        <span>NOTRE SÉLECTION</span>
+
+        <h1>
+            Découvrez les produits
+            de Madagascar
+        </h1>
+
+        <p>
+            Des produits issus du savoir-faire Malagasy,
+            sélectionnés pour permettre à la diaspora de
+            retrouver une partie de Madagascar.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="intro">
+
+    <div class="container intro-content">
+
+        <span class="section-label">
+            MADE IN MADAGASCAR
+        </span>
+
+        <h2>
+            Des produits, des savoir-faire
+            et des histoires
+        </h2>
+
+        <p>
+            Chaque produit possède une histoire.
+            Notre objectif est de présenter les produits
+            Malagasy et de mettre en valeur les personnes
+            qui les produisent.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="products-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div>
+                <span class="section-line"></span>
+
+                <h2>
+                    Nos catégories
+                </h2>
+            </div>
+
+            <span id="productCount">
+                12 produits
+            </span>
+
+        </div>
+
+
+        <!-- FILTRES -->
+
+        <div class="filters">
+
+            <button
+                class="filter-btn active"
+                data-category="all">
+                Tous
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="epices">
+                <i class="fa-solid fa-pepper-hot"></i>
+                Épices
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="boissons">
+                <i class="fa-solid fa-bottle-water"></i>
+                Boissons
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="artisanat">
+                <i class="fa-solid fa-basket-shopping"></i>
+                Artisanat
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="patisserie">
+                <i class="fa-solid fa-cookie-bite"></i>
+                Pâtisserie
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="biscuits">
+                <i class="fa-solid fa-cookie"></i>
+                Biscuits
+            </button>
+
+        </div>
+
+
+        <!-- PRODUITS -->
+
+        <div class="products-grid" id="productsGrid">
+
+
+            <!-- ================= EPICES ================= -->
+
+            <article
+                class="product-card"
+                data-category="epices"
+                data-name="vanille de madagascar">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images\Vanille.jpg"
+                        alt="Vanille de Madagascar">
+
+                    <span class="product-tag">
+                        Épices
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Vanille de Madagascar
+                    </h3>
+
+                    <p>
+                        Une vanille reconnue pour
+                        son parfum et son arôme.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="epices"
+                data-name="poivre sauvage voatsiperifery">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images\Poivre.jpg"
+                        alt="Poivre Malagasy">
+
+                    <span class="product-tag">
+                        Épices
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Poivre sauvage
+                    </h3>
+
+                    <p>
+                        Une épice issue du savoir-faire
+                        et des ressources naturelles Malagasy.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="epices"
+                data-name="cafe malagasy">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images\Cafe.jpg"
+                        alt="Café Malagasy">
+
+                    <span class="product-tag">
+                        Épices
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Café Malagasy
+                    </h3>
+
+                    <p>
+                        Un café provenant de producteurs
+                        Malagasy.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= BOISSONS ================= -->
+
+            <article
+                class="product-card"
+                data-category="boissons"
+                data-name="boisson gazeuse">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Boisson.jpg"
+                        alt="Boisson gazeuse Malagasy">
+
+                    <span class="product-tag">
+                        Boissons
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Boissons gazeuses
+                    </h3>
+
+                    <p>
+                        Découvrez une sélection de
+                        boissons non alcoolisées appréciées
+                        à Madagascar.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= ARTISANAT ================= -->
+
+            <article
+                class="product-card"
+                data-category="artisanat"
+                data-name="sac artisanal">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Sac.jpg"
+                        alt="Sac artisanal Malagasy">
+
+                    <span class="product-tag">
+                        Artisanat
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Sacs artisanaux
+                    </h3>
+
+                    <p>
+                        Des sacs fabriqués à partir
+                        de matériaux et de techniques
+                        traditionnelles.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Artisanat Malagasy
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="artisanat"
+                data-name="vetement malagasy">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Vetement.jpg"
+                        alt="Vêtement Malagasy">
+
+                    <span class="product-tag">
+                        Artisanat
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Vêtements Malagasy
+                    </h3>
+
+                    <p>
+                        Des vêtements inspirés des
+                        traditions et du savoir-faire local.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= PATISSERIE ================= -->
+
+            <article
+                class="product-card"
+                data-category="patisserie"
+                data-name="mofo gasy">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Mofogasy.jpg"
+                        alt="Mofo Gasy">
+
+                    <span class="product-tag">
+                        Pâtisserie
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Mofo Gasy
+                    </h3>
+
+                    <p>
+                        Une spécialité Malagasy
+                        traditionnellement consommée
+                        au petit-déjeuner.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Tradition Malagasy
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="patisserie"
+                data-name="godrogodro">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Godrogodro.jpg"
+                        alt="Godrogodro">
+
+                    <span class="product-tag">
+                        Pâtisserie
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Godrogodro
+                    </h3>
+
+                    <p>
+                        Une pâtisserie traditionnelle
+                        Malagasy à découvrir.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Tradition Malagasy
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ================= BISCUITS ================= -->
+
+            <article
+                class="product-card"
+                data-category="biscuits"
+                data-name="croquette">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Croquette.jpg"
+                        alt="Croquette">
+
+                    <span class="product-tag">
+                        Biscuits
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Croquette
+                    </h3>
+
+                    <p>
+                        Un biscuit apprécié et
+                        associé aux habitudes alimentaires
+                        Malagasy.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="biscuits"
+                data-name="salto">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Salto.jpg"
+                        alt="Salto">
+
+                    <span class="product-tag">
+                        Biscuits
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Salto
+                    </h3>
+
+                    <p>
+                        Un biscuit connu et apprécié
+                        par de nombreux consommateurs.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="biscuits"
+                data-name="gouty">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Gouty.jpg"
+                        alt="Gouty">
+
+                    <span class="product-tag">
+                        Biscuits
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Gouty
+                    </h3>
+
+                    <p>
+                        Un produit pouvant rappeler
+                        les habitudes alimentaires de Madagascar.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="product-card"
+                data-category="biscuits"
+                data-name="18 petit beurre">
+
+                <div class="product-image">
+
+                    <img
+                        src="Images/Scobis.jpg"
+                        alt="18 Petit Beurre">
+
+                    <span class="product-tag">
+                        Biscuits
+                    </span>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        18 Petit Beurre
+                    </h3>
+
+                    <p>
+                        Un biscuit simple qui peut
+                        rappeler certains souvenirs
+                        de Madagascar.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="origin">
+                            Madagascar
+                        </span>
+
+                        <button class="details-btn">
+                            Découvrir
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MESSAGE ================= -->
+
+<section class="diaspora-section">
+
+    <div class="container diaspora-content">
+
+        <span>
+            NOTRE VISION
+        </span>
+
+        <h2>
+            Même loin de Madagascar,
+            gardez Madagascar près de vous.
+        </h2>
+
+        <p>
+            À travers les produits, les saveurs et
+            l'artisanat, nous souhaitons créer un lien
+            entre Madagascar et sa diaspora.
+        </p>
+
+        <a href="index.html#apropos" class="btn">
+            Découvrir notre histoire
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo footer-logo">
+
+                <span class="logo-icon">▲</span>
+
+                <div>
+                    <strong>Madagascar</strong>
+                    <small>AU-DELÀ DES FRONTIÈRES</small>
+                </div>
+
+            </a>
+
+            <p>
+                Faire découvrir Madagascar,
+                ses produits et ses histoires
+                au-delà des frontières.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Navigation</h4>
+
+            <a href="#accueil">Accueil</a>
+            <a href="#blog">Blog</a>
+            <a href="#produits">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Suivez-nous</h4>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Madagascar au-delà des frontières.
+            Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/produits.js"></script>
+
+</body>
+</html>

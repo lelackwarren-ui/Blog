@@ -977,3 +977,32 @@
             }
 
         }
+
+/* =========================================
+   PETIT MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 15px;
+        max-width: 220px;
+    }
+
+    .blog-header h1 {
+        font-size: 32px;
+    }
+
+    .article-image {
+        height: 190px;
+    }
+
+    .article-content {
+        padding: 18px;
+    }
+
+}
